@@ -10,6 +10,8 @@ COPY . /app
 # Install FastAPI and any other dependencies
 RUN pip install -r requirements.txt
 
+
+ENV PORT=8080
 # Expose the port that FastAPI will run on
 EXPOSE 8000
 
